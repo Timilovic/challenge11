@@ -2,12 +2,21 @@
     margin-bottom: 9px;
 }
 
+.bg{
+    width: 17rem;
+    height:38rem;
+    background-color: purple;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+}
+
 
 main{
     display: flex;
     align-items: center;
     margin:auto;
     justify-content: space-evenly;
+    z-index: 100;
 }
 
 .section1{
@@ -20,10 +29,12 @@ main{
     display: inline-block;
     border-width: 16px;
     box-shadow: 1px 2px 7px rgb(160, 158, 158);
+    z-index: 100;
 }
 
 .section1 p, .chat1, .chat2, .chat3 .chat4, .chat5, .chat6, .chat7{
     font-size:12px !important;
+    z-index: 100;
 }
 
 .shape{
@@ -206,6 +217,10 @@ input::placeholder{
 @media screen and (max-width:768px) {
     main{
         flex-direction: column;
+    }
+
+    .section1{
+        min-width: 360px !important;
     }
 
     .custom{
