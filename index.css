@@ -1,0 +1,224 @@
+*{
+    margin-bottom: 9px;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    margin:auto;
+    justify-content: space-evenly;
+}
+
+.section1{
+    margin-top: 10px;
+    width:30%;
+    border:1px solid white;
+    background-color: hsl(270, 20%, 96%);
+    overflow: hidden;
+    box-sizing: border-box;
+    display: inline-block;
+    border-width: 16px;
+    box-shadow: 1px 2px 7px rgb(160, 158, 158);
+}
+
+.section1 p, .chat1, .chat2, .chat3 .chat4, .chat5, .chat6, .chat7{
+    font-size:12px !important;
+}
+
+.shape{
+    width:57%;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top: -1px;
+}
+
+
+.head1{
+    background-image: linear-gradient(100deg,hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    width:100%;
+    box-sizing: border-box;
+    /* border:1px solid brown; */
+    display: flex;
+    position:relative;
+    /* overflow: hidden !important; */
+    /* border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius:0; */
+}
+
+.content{
+    width:59%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    border-radius: inherit !important;
+}
+
+.head1 img{
+    border:4px solid rgb(177, 171, 171) !important;
+    margin:0;
+}
+
+.holder{
+    display: inline-block;
+    margin:0;
+}
+
+.bi-three-dots-vertical{
+    margin-left:auto;
+    align-self: center;
+}
+
+.all-container{
+    padding:11px;
+
+}
+
+.chat1, .chat2{
+    background-color: rgba(224, 219, 224, 0.596);
+    padding:5px;
+    max-width: 51% !important;
+    border-radius: 9px;
+    border-bottom-left-radius: 0;
+    color: hsl(276, 55%, 52%);
+}
+
+.image-container {
+    text-align: right;
+}
+
+.image-container img{
+    border-radius:25%;
+}
+
+.nd-chat-container{
+    border: 1px solid black;
+    text-align: right;
+}
+
+.chat3, .chat4{
+    padding:7px;
+    max-width:51%;
+    margin-left: auto;
+    border-radius: 9px;
+    border-bottom-right-radius: 0;
+    box-shadow: 4px 2px 8px rgb(177, 172, 172);
+    color: hsl(271, 15%, 43%) !important;
+    display: block;
+    font-size: 11px;
+}
+
+.chat5{
+    padding:5px;
+    max-width:50%;
+    margin-bottom: 8px;
+    border-radius: 9px;
+    border-bottom-left-radius: 0;
+    display: block;
+    background-color: rgba(224, 219, 224, 0.596);
+}
+
+.chat6{
+    display: flex;
+    align-items: center;
+    width: 58%;
+    padding: 9px;
+    border-radius: 7PX;
+    border-bottom-left-radius: 0;
+    background-image: linear-gradient(100deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+.chat6 p{
+    margin: 0;
+}   
+
+.chat6 .round, .round{
+    width:8%;
+    height:15px;
+    align-self: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 0;
+    margin-right: 9px;
+}
+
+.first-word{
+    margin-right:auto !important;
+}
+
+
+
+.chat7{
+    display: flex;
+    justify-content: space-between;
+    max-width: 58%;
+    padding: 9px;
+    border-radius: 7PX;
+    border-bottom-left-radius: 0;
+    background-image: linear-gradient(100deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+
+}
+
+.input-container{
+    position:relative;
+    box-sizing: border-box;
+}
+
+input{
+    width: 100%;
+    border: none;
+    box-shadow: 1px 2px 4px gray;
+}
+
+input::placeholder{
+    padding-left: 22px !important;
+}
+
+
+.fa-chevron-circle-right{
+    position: absolute;
+    right: 1px;
+    bottom:-8px;
+    font-size:40px;
+}
+
+.section2{
+    display: inline-block;
+    width: 30%;
+    /* border:1px solid violet; */
+    text-align: left;
+}
+
+.secton2 h1{
+    color: hsl(276, 100%, 81%);
+}
+
+.secton2 div{
+    color: hsl(270, 7%, 64%);
+}
+
+
+@media screen and (max-width:768px) {
+    main{
+        flex-direction: column;
+    }
+
+    .custom{
+        min-width: 48%;
+        margin-bottom: 4rem !important;
+    }
+
+    .content{
+        width:65%;
+    }
+
+    .section2{
+        width:50%;
+        text-align: center !important;
+    }
+}
